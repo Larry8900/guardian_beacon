@@ -1,0 +1,10 @@
+{
+  "name": "Missing Person Alert System",
+  "description": "A responsive, accessible dashboard for registering profiles, reporting sightings, and publishing urgent alerts for missing persons.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
