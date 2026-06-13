@@ -260,7 +260,7 @@ export default function MissingPersonForm({
             setActiveFormTab('alert');
             if (onClearSelectedAlertToSought) onClearSelectedAlertToSought();
           }}
-          className={`flex-1 sm:flex-none flex items-center justify-center space-x-2 py-3 px-6 text-sm font-bold border-b-2 transition-colors ${
+          className={`flex-1 sm:flex-none flex items-center justify-center space-x-1.5 py-3 px-3 sm:px-6 text-xs sm:text-sm font-bold border-b-2 transition-colors ${
             activeFormTab === 'alert'
               ? 'border-alert-custom text-alert-custom'
               : 'border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300'
@@ -272,7 +272,7 @@ export default function MissingPersonForm({
 
         <button
           onClick={() => setActiveFormTab('sighting')}
-          className={`flex-1 sm:flex-none flex items-center justify-center space-x-2 py-3 px-6 text-sm font-bold border-b-2 transition-colors ${
+          className={`flex-1 sm:flex-none flex items-center justify-center space-x-1.5 py-3 px-3 sm:px-6 text-xs sm:text-sm font-bold border-b-2 transition-colors ${
             activeFormTab === 'sighting'
               ? 'border-primary-custom text-primary-custom'
               : 'border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300'
@@ -463,7 +463,7 @@ export default function MissingPersonForm({
                     )}
 
                     {/* Quick Mock Asset Picker */}
-                    <div className="flex justify-center space-x-2 pt-2 border-t border-slate-100">
+                    <div className="flex flex-wrap justify-center gap-2 pt-2 border-t border-slate-100">
                       <button 
                         type="button" 
                         onClick={() => handleDummyImageSelect('Male')}

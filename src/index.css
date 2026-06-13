@@ -13,6 +13,8 @@
   --color-alert-custom: #dc2626;
   
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  --breakpoint-xs: 400px;
 }
 
 @layer base {

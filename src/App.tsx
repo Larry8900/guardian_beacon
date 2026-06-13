@@ -615,12 +615,12 @@ export default function App() {
                 System Broadcast ID: {inspectingAlert.id}
               </p>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full sm:w-auto">
                 {inspectingAlert.status === 'ACTIVE' && (
                   <button
                     type="button"
                     onClick={() => handleResolveAlert(inspectingAlert.id)}
-                    className="inline-flex items-center justify-center space-x-1.5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-2.5 text-xs font-bold text-alert-custom hover:bg-rose-100 transition"
+                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-2.5 text-xs font-bold text-alert-custom hover:bg-rose-100 transition"
                   >
                     <CheckCircle className="h-4 w-4" />
                     <span>Resolve Case (Mark Found)</span>
@@ -634,7 +634,7 @@ export default function App() {
                     setInspectingAlert(null);
                     setCurrentTab('report');
                   }}
-                  className="inline-flex items-center justify-center space-x-1.5 rounded-xl bg-primary-custom px-4 py-2.5 text-xs font-bold text-white shadow-md hover:bg-teal-800 transition"
+                  className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 rounded-xl bg-primary-custom px-4 py-2.5 text-xs font-bold text-white shadow-md hover:bg-teal-800 transition"
                 >
                   <Eye className="h-4 w-4" />
                   <span>Report Sighting of this Person</span>

@@ -176,7 +176,7 @@ export default function ProfilePage({ currentUser, onUpdateCurrentUser }: Profil
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
         
         {/* User Badge Details */}
-        <div className="md:col-span-1 border-r border-slate-100 pr-0 md:pr-6 space-y-4 flex flex-col items-center text-center">
+        <div className="md:col-span-1 border-b md:border-b-0 md:border-r border-slate-100 pb-6 md:pb-0 pr-0 md:pr-6 space-y-4 flex flex-col items-center text-center">
           
           <div className="relative">
             {profilePhoto ? (
@@ -264,11 +264,11 @@ export default function ProfilePage({ currentUser, onUpdateCurrentUser }: Profil
             </div>
             <h4 className="font-display font-extrabold text-slate-800 text-sm">Crisis Profile Photo Token</h4>
           </div>
-          <p className="text-xs text-slate-500 pl-8">
+          <p className="text-xs text-slate-500 pl-0 sm:pl-8">
             Upload or choose a recognizable human shot. Searchers will rely heavily on this.
           </p>
           
-          <div className="pl-8 space-y-4">
+          <div className="pl-0 sm:pl-8 space-y-4">
             <div className="flex flex-wrap gap-3">
               <button 
                 type="button"
@@ -320,10 +320,10 @@ export default function ProfilePage({ currentUser, onUpdateCurrentUser }: Profil
             </div>
             <h4 className="font-display font-extrabold text-slate-800 text-sm">Physical Descriptors token</h4>
           </div>
-          <p className="text-xs text-slate-500 pl-8">
+          <p className="text-xs text-slate-500 pl-0 sm:pl-8">
             Define highly stable landmarks. Focus on unchangeable marks first (tattoos, scars, spectacles structure).
           </p>
-          <div className="pl-8">
+          <div className="pl-0 sm:pl-8">
             <textarea
               rows={3}
               required
@@ -343,10 +343,10 @@ export default function ProfilePage({ currentUser, onUpdateCurrentUser }: Profil
             </div>
             <h4 className="font-display font-extrabold text-slate-800 text-sm">Telemetry Geolocation Access Token</h4>
           </div>
-          <p className="text-xs text-slate-500 pl-8">
+          <p className="text-xs text-slate-500 pl-0 sm:pl-8">
             Access secure HTML5 high accuracy positioning to cache your device's last active safety node coordinates.
           </p>
-          <div className="pl-8 space-y-4">
+          <div className="pl-0 sm:pl-8 space-y-4">
             <div className="flex items-center space-x-4">
               <button
                 type="button"
@@ -403,11 +403,11 @@ export default function ProfilePage({ currentUser, onUpdateCurrentUser }: Profil
             </div>
             <h4 className="font-display font-extrabold text-slate-800 text-sm">Government Issued Valid ID token</h4>
           </div>
-          <p className="text-xs text-slate-500 pl-8">
+          <p className="text-xs text-slate-500 pl-0 sm:pl-8">
             Upload scanner copy of Passport, National ID card, or Driver's License to confirm legal name identities.
           </p>
           
-          <div className="pl-8 space-y-4">
+          <div className="pl-0 sm:pl-8 space-y-4">
             <div className="max-w-md">
               <label className="flex flex-col items-center justify-center border-2 border-dashed border-slate-200 rounded-xl p-6 cursor-pointer hover:bg-slate-50 transition relative">
                 <input 

@@ -217,11 +217,11 @@ export default function LandingPage({
               <p className="font-display text-3xl sm:text-4xl font-extrabold text-white">100%</p>
               <p className="text-xs font-semibold text-teal-100 uppercase tracking-widest">Citizen Privacy Guarded</p>
             </div>
-            <div className="space-y-1 border-l border-teal-700/60">
+            <div className="space-y-1 border-t md:border-t-0 md:border-l border-teal-700/60 pt-6 md:pt-0">
               <p className="font-display text-3xl sm:text-4xl font-extrabold text-secondary-custom">14.2k</p>
               <p className="text-xs font-semibold text-teal-100 uppercase tracking-widest">Beacon Volunteers</p>
             </div>
-            <div className="space-y-1 border-l border-teal-700/60">
+            <div className="space-y-1 border-t md:border-t-0 border-l border-teal-700/60 pt-6 md:pt-0">
               <p className="font-display text-3xl sm:text-4xl font-extrabold text-white">418</p>
               <p className="text-xs font-semibold text-teal-100 uppercase tracking-widest">Reunited Families</p>
             </div>
